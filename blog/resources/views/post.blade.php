@@ -9,4 +9,6 @@
             </div>
         </article>
     </article>
+
+    <a href="/">Go back</a>
 </x-layout>
