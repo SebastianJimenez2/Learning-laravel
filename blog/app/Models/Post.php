@@ -8,8 +8,8 @@ use \Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Post extends Model
 {
-    protected $guarded = [
-    ];
+    protected $guarded = [];
+    protected $with = ['category', 'author'];
 
     use HasFactory;
 
@@ -19,8 +19,8 @@ class Post extends Model
         return $this->belongsTo(Category::class);
     }
 
-    public function user(): BelongsTo
+    public function author(): BelongsTo
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(User::class, 'user_id');
     }
 }
