@@ -1,11 +1,14 @@
 <!doctype html>
+<html lang="en">
+<head>
+    <title>Laravel From Scratch Blog</title>
 
-<title>Laravel From Scratch Blog</title>
-<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-
-<body style="font-family: Open Sans, sans-serif">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.8/dist/cdn.min.js"></script>
+</head>
+<body>
 <section class="px-6 py-8">
     <nav class="md:flex md:justify-between md:items-center">
         <div>
@@ -23,7 +26,7 @@
         </div>
     </nav>
 
-    {{ $slot }}
+    {{ $slot   }}
 
     <footer class="bg-gray-100 border border-black border-opacity-5 rounded-xl text-center py-16 px-10 mt-16">
         <img src="./images/lary-newsletter-icon.svg" alt="" class="mx-auto -mb-6" style="width: 145px;">
@@ -54,4 +57,4 @@
     </footer>
 </section>
 </body>
-
+</html>
