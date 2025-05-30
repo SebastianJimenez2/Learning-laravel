@@ -41,7 +41,8 @@
                     </x-slot>
 
                     <x-dropdown-item
-                        href="/admin/dashboard">Dashboard
+                        href="/admin/posts"
+                        :active="request()->is('admin/posts')">All Posts
                     </x-dropdown-item>
 
                     <x-dropdown-item
@@ -50,7 +51,8 @@
                     </x-dropdown-item>
 
                     <x-dropdown-item
-                        href="#" x-data="{}"
+                        href="#"
+                        x-data="{}"
                         @click.prevent="document.querySelector('#logout-form').submit()">Log Out
                     </x-dropdown-item>
 
@@ -61,7 +63,6 @@
             @else
                 <a href="/register"
                    class="text-xs font-bold uppercase {{ request()->is('register') ? 'text-blue-500' : '' }}">Register</a>
-                Add commentMore actions
                 <a href="/login"
                    class="ml-6 text-xs font-bold uppercase {{ request()->is('login') ? 'text-blue-500' : '' }}">Log
                     In</a>
