@@ -28,7 +28,7 @@
             </div>
 
             <div class="flex justify-end">
-                <x-submit-button>Post</x-submit-button>
+                <x-form.button>Post</x-form.button>
             </div>
         </form>
     </x-panel>
